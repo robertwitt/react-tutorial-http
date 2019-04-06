@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
-import axios from '../../axios';
+import { Route, Link } from 'react-router-dom';
 import Posts from './Posts/Posts';
 import NewPost from './NewPost/NewPost';
 import './Blog.css';
-import { Route, Link } from 'react-router-dom';
 
 class Blog extends Component {
 
