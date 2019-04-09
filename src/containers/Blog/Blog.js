@@ -6,6 +6,10 @@ import './Blog.css';
 
 class Blog extends Component {
 
+  state = {
+    auth: false
+  }
+
   render () {
     return (
       <div className="Blog">
@@ -31,9 +35,11 @@ class Blog extends Component {
           </nav>
         </header>
         <Switch>
+          // {this.state.auth ? <Route path="/new-post" component={NewPost} /> : null}
           <Route path="/new-post" component={NewPost} />
           <Route path="/posts" component={Posts} />
           <Redirect from='/' to='/posts' />
+          // <Route render={() => <h1>Not found</h1>} />
         </Switch>
       </div>
     );
